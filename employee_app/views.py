@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from .models import Employee_details, Employee_personal_details
 
 # Create your views here.
+
 
 def base(request):
     post = Employee_details.objects.all()
