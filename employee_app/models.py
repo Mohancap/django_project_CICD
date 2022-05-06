@@ -28,7 +28,5 @@ class Employee_personal_details(models.Model):
     emp_current_address = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
 
-
-
     def __str__(self):
         return self.employee_name
