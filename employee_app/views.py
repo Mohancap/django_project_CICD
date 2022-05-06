@@ -27,10 +27,13 @@ def employee_contact_infor(request):
         emp_current_address = request.POST['current_address']
         created_date = request.POST.get('date')
         employee_details = Employee_personal_details(
-            employee_name=employee_name, employee_id=employee_id, contact_num=contact_num,
-            company_location=company_location, emp_salary=emp_salary, emp_age=emp_age,
-            emp_permanant_address=emp_permanant_address, emp_email_address=emp_email_address,
-            emp_current_address=emp_current_address, created_date=created_date)
+            employee_name=employee_name, employee_id=employee_id,
+            contact_num=contact_num, company_location=company_location,
+            emp_salary=emp_salary, emp_age=emp_age,
+            emp_permanant_address=emp_permanant_address,
+            emp_email_address=emp_email_address,
+            emp_current_address=emp_current_address,
+            created_date=created_date)
 
         employee_details.save()
 

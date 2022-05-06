@@ -28,13 +28,21 @@ class Migration(migrations.Migration):
                 ('salary', models.IntegerField()),
                 ('location', models.CharField(max_length=100)),
                 ('about_self', models.TextField()),
-                ('created_at', models.DateTimeField(default=datetime.datetime.now)),
+                (
+                    'created_at',
+                    models.DateTimeField(default=datetime.datetime.now)),
             ],
         ),
         migrations.CreateModel(
             name='Employee_personal_details',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID')),
                 ('employee_name', models.CharField(max_length=100)),
                 ('employee_id', models.IntegerField()),
                 ('contact_num', models.IntegerField()),
