@@ -37,7 +37,7 @@ jobs:
       run: |
         python manage.py makemigrations
         python manage.py migrate
-     - name: Coverage report
+    - name: Coverage report
       run: |
         pip install coverage
         coverage run manage.py test
