@@ -18,7 +18,7 @@ from django.urls import path
 from .views import demo
 from django.conf import settings
 from django.conf.urls.static import static
-from employee_app.views import first, base, employee_contact_infor, employee_info
+from employee_app.views import first,base,employee_contact_infor,employee_info
 
 
 urlpatterns = [
