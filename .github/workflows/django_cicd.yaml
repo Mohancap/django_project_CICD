@@ -37,6 +37,11 @@ jobs:
       run: |
         python manage.py makemigrations
         python manage.py migrate
+     - name: Coverage report
+      run: |
+        pip install coverage
+        coverage run manage.py test
+        coverage report
     - name: Execute Python scripts
       run: |
         python manage.py runserver 127.0.0.1:8000
