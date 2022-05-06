@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 # Create your models here.
 
+
 class Employee_details(models.Model):
     title = models.CharField(max_length=100)
     name = models.CharField(max_length=50)
@@ -12,7 +13,7 @@ class Employee_details(models.Model):
     created_at = models.DateTimeField(default=datetime.now)
 
     def __str__(self):
-        return self.title   
+        return self.title
 
 
 class Employee_personal_details(models.Model):
@@ -30,3 +31,4 @@ class Employee_personal_details(models.Model):
 
     def __str__(self):
         return self.full_name
+        
