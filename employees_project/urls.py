@@ -18,7 +18,7 @@ from django.urls import path
 from .views import demo
 from django.conf import settings
 from django.conf.urls.static import static
-from employee_app.views import first, base, employee_contact_infor, employee_info
+from employee_app.views import *
 
 
 urlpatterns = [
@@ -26,7 +26,8 @@ urlpatterns = [
     path("demo/", demo, name="demo"),
     path("first/", first, name="first"),
     path("base/", base, name="base"),
-    path("employee_contact_infor/", employee_contact_infor, name="employee_contact_infor"),
+    path(
+        "employee_contact_infor/", employee_contact_infor, name="employee_contact_infor"),
     path("employee_info/", employee_info, name="employee_info")
 ]
 
