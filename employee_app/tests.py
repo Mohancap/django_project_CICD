@@ -1,4 +1,5 @@
 from django.test import TestCase
+from datetime import datetime
 
 # Create your tests here.
 
@@ -14,6 +15,6 @@ class EmployeeTests(TestCase):
             salary = 100000,
             location = "Bangalore",
             about_self = "Hi, This is Murali Mohan, Working at Capgemini in Bangalore",
-            created_at = "time"
+            created_at = datetime.now()
         )
         employee_information.save()
