@@ -49,3 +49,4 @@ jobs:
       with:
         script: |
           print("Hello World")
+          python manage.py runserver
