@@ -31,8 +31,8 @@ urlpatterns = [
     path(
         "employee_contact_infor/", employee_contact_infor,
         name="employee_contact_infor"),
-    path("employee_info/", employee_info, name="employee_info"),
-    path("employee_information/", employee_information, name="employee_information")
+    path("employee_info/", employee_info, name="employee_info")
+  
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
