@@ -31,6 +31,8 @@ jobs:
       run: |
         pip install flake8
         flake8
+    - name: Collect static
+      run: python manage.py collectstatic
     - name: Run Migrations
       run: |
         python manage.py makemigrations
@@ -48,4 +50,4 @@ jobs:
         script: |
           print("Hello World")
     - name: Run Server
-      run : $ python manage.py runserver
+      run : python manage.py runserver
