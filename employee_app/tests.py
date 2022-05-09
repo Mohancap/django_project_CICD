@@ -3,18 +3,18 @@ from datetime import datetime
 
 # Create your tests here.
 
-from .models import Employee_details
+from .models import Employee_information
 
 
 class EmployeeTests(TestCase):
     def test_page_is_created_successfully(self):
-        employee_information = Employee_details(
+        employee_information = Employee_information(
             title = "Employee details",
             name = "Murali",
             age = 28,
             salary = 100000,
             location = "Bangalore",
             about_self = "Hi, This is Murali Mohan, Working at Capgemini in Bangalore",
-            created_at = datetime.now()
+            # created_at = datetime.now()
         )
         employee_information.save()
