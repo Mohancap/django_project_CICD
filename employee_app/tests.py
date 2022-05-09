@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.test import TestCase
 from datetime import datetime
 
@@ -18,3 +19,7 @@ class EmployeeTests(TestCase):
             # created_at = datetime.now()
         )
         employee_information.save()
+
+def employee_information(request):
+    post = Employee_information.objects.all()
+    return render(request, "base.html", {"post": post})

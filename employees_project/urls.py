@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from employee_app.views import base, first
 from employee_app.views import employee_contact_infor, employee_info
+from employee_app.tests import employee_information
 
 
 urlpatterns = [
@@ -30,7 +31,8 @@ urlpatterns = [
     path(
         "employee_contact_infor/", employee_contact_infor,
         name="employee_contact_infor"),
-    path("employee_info/", employee_info, name="employee_info")
+    path("employee_info/", employee_info, name="employee_info"),
+    path("employee_information/", employee_information, name="employee_information")
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
