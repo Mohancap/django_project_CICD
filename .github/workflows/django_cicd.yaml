@@ -45,7 +45,7 @@ jobs:
     - name: Execute Python scripts
       run: |
         python manage.py test
-    - name: Script
+    - uses: jannekem/run-python-script-action@v1
       with:
         script: |
           print("Hello World")
