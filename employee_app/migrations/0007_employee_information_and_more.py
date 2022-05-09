@@ -6,14 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('employee_app', '0006_alter_employee_personal_details_contact_num_and_more'),
+        (
+            'employee_app',
+            '0006_alter_employee_personal_details_contact_num_and_more'),
     ]
 
     operations = [
         migrations.CreateModel(
             name='Employee_information',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('name', models.CharField(max_length=50)),
                 ('age', models.IntegerField()),
