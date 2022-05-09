@@ -44,8 +44,8 @@ jobs:
         coverage report
     - name: Execute Python scripts
       run: |
-        cd src
-        python manage.py test
+        cd emloyees_project
+        python manage.py runserver
     - uses: jannekem/run-python-script-action@v1
       with:
         script: |
