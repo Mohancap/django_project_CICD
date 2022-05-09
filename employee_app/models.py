@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from django.utils import timezone
 # Create your models here.
 
 
@@ -10,7 +11,7 @@ class Employee_details(models.Model):
     salary = models.IntegerField()
     location = models.CharField(max_length=100)
     about_self = models.TextField()
-    created_at = models.DateTimeField(default=datetime.now)
+    created_at = models.DateTimeField(default=datetime.now())
 
     def __str__(self):
         return self.title
