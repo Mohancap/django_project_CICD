@@ -48,6 +48,5 @@ jobs:
       with:
         script: |
           print("Hello World")
-    - uses: ./employees_project
     - name: Run Server
       run : python manage.py runserver
