@@ -13,4 +13,4 @@ class EmployeeTests(TestCase):
 def employee_information(self):
     e = self.employee_app
     self.assertTrue(isinstance(e, Employee_information))
-    self.assertEqual(str(e), 'Bangalor')
+    self.assertEqual(str(e), 'Bangalore')
