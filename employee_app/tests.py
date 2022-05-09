@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.test import TestCase
 from datetime import datetime
 
@@ -9,17 +8,17 @@ from .models import Employee_information
 
 class EmployeeTests(TestCase):
     def test_page_is_created_successfully(self):
-        employee_information = Employee_information(
-            title = "Employee details",
-            name = "Murali",
-            age = 28,
-            salary = 100000,
+        self.employee_app = Employee_information.objects.create(
+            title = "Bangalore",
+            name = "Bangalore",
+            # age = 28,
+            # salary = 100000,
             location = "Bangalore",
-            about_self = "Hi, This is Murali Mohan, Working at Capgemini in Bangalore",
+            # about_self = "Hi, This is Murali Mohan, Working at Capgemini in Bangalore"
             # created_at = datetime.now()
         )
-        employee_information.save()
 
-def employee_information(request):
-    post = Employee_information.objects.all()
-    return render(request, "base.html", {"post": post})
+def employee_information(self):
+    e = self.employee_app
+    self.assertTrue(isinstance(e, Employee_information))
+    self.assertEqual(str(e), 'Employee details')

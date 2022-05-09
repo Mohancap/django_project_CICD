@@ -35,10 +35,10 @@ class Employee_personal_details(models.Model):
 class Employee_information(models.Model):
     title = models.CharField(max_length=100)
     name = models.CharField(max_length=50)
-    age = models.IntegerField()
-    salary = models.IntegerField()
+    # age = models.IntegerField()
+    # salary = models.IntegerField()
     location = models.CharField(max_length=100)
-    about_self = models.TextField()
+    # about_self = models.TextField()
     # created_at = models.DateTimeField(default=datetime.now)
 
     def __str__(self):
