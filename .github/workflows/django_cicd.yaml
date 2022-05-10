@@ -48,5 +48,5 @@ jobs:
       with:
         script: |
           print("Hello World")
-#     - name: Run Server
-#       run : python manage.py runserver
+    - name: Run Test
+      run : python manage.py test
