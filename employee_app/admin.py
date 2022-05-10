@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Employee_details, Employee_personal_details, Employee_information
+from .models import Employee_details, Employee_personal_details
+from .models import Employee_information
 
 # Register your models here.
 
