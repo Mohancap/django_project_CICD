@@ -42,10 +42,8 @@ jobs:
         pip install coverage
         coverage run manage.py test
         coverage report
-    - name: Execute Python scripts
-      run: |
-        cd employees_project
-        python manage.py test
+    - name: Environment Variables
+      run: env
     - uses: jannekem/run-python-script-action@v1
       with:
         script: |
