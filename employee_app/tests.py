@@ -11,7 +11,6 @@ class EmployeeTests(TestCase):
             name='Bangalore',
             location='Bangalore')
 
-
     def employee_information(self):
         e = self.employee_app
         self.assertTrue(isinstance(e, Employee_information))
