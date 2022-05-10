@@ -41,5 +41,5 @@ def employee_contact_infor(request):
 
 
 def employee_info(request):
-    post = Employee_personal_details.objects.all()
-    return render(request, "base.html", {"post": post})
+    post1 = Employee_personal_details.objects.all()
+    return render(request, "base.html", {"post1": post1})
