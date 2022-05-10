@@ -7,7 +7,7 @@ from .models import Employee_information
 class EmployeeTests(TestCase):
     def test_page(self):
         self.employee_app = Employee_information.objects.create(
-            title='Bangalo',
+            title=20,
             name='Bangalore',
             location='Bangalore')
 
