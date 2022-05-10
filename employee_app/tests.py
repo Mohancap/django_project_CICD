@@ -12,7 +12,7 @@ class EmployeeTests(TestCase):
             location="Bangalore")
 
 
-def employee_information(self):
-    e = self.employee_app
-    self.assertTrue(isinstance(e, Employee_information))
-    self.assertEqual(str(e), 'Bangalore')
+    def employee_information(self):
+        e = self.employee_app
+        self.assertTrue(isinstance(e, Employee_information))
+        self.assertEqual(str(e), 'Bangalore')
