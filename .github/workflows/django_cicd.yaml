@@ -31,8 +31,6 @@ jobs:
       run: |
         pip install flake8
         flake8
-    - name: Collect static
-      run: python manage.py collectstatic
     - name: Run Migrations
       run: |
         python manage.py makemigrations
